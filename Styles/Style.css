@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .esquerdo {
+  background-color: #fbff05;
+  width: 50%;
+}
+
+.container .esquerdo .texto {
+  margin-top: 40%;
+  text-align: center;
+  font-size: 150px;
+  color: #00ff88;
+}
+
+.container .direito {
+  background-color: #00ff88;
+  width: 50%;
+}
+
+.container .direito .texto {
+  margin-top: 40%;
+  text-align: center;
+  font-size: 150px;
+  color: #fbff05;
+}
+/*# sourceMappingURL=Style.css.map */

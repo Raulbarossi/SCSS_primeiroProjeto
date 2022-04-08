@@ -1,0 +1,31 @@
+$cor1: rgb(251, 255, 5);
+$cor2: rgb(0, 255, 136);
+
+@mixin reset {
+    margin: 0;
+    padding: 0;
+}
+@mixin fundoETexto($fundo,$texto){
+    background-color:$fundo;
+    width: 50%;
+    .texto{
+        margin-top: 40%;
+        text-align: center;
+        font-size: 150px;
+        color:$texto;
+    }
+}
+body {
+    @include reset();
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    .esquerdo{
+        @include fundoETexto($cor1,$cor2)
+    }
+    .direito{
+        @include fundoETexto($cor2,$cor1)
+    }
+}
